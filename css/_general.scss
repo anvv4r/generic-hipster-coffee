@@ -1,0 +1,66 @@
+//<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$light-gray: #EFF1F1;
+$middle-gray: #7f7f7f;
+$dark-gray: #33393f;
+$dark-blue: #0086ff;
+$light-blue: #41a9ff;
+
+
+@mixin header1 {
+    font: {
+        family: "Roboto Condensed Light",sans-serif;
+        size: 2.5rem;
+        weight: 300;
+    };
+    text-transform: uppercase;
+}
+
+@mixin header2 {
+    font: {
+        family: "Roboto Condensed Light",sans-serif;
+        size: 2rem;
+        weight: 300;
+    };
+    text-transform: uppercase;
+}
+
+@mixin header3 {
+    font: {
+        family: "Roboto Condensed Light",sans-serif;
+        size: 1.5rem;
+        weight: 300;
+    };
+    text-transform: uppercase;
+}
+
+@mixin prgph {
+    font: {
+        family: "Roboto Condensed Light",sans-serif;
+        size: 1rem;
+        weight: 300;
+    };
+}
+
+@mixin content {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@mixin a-footer-active {
+    color: $dark-blue;
+}
+
+@mixin a-footer-inactive {
+    color: $light-gray;
+    text-decoration: none;
+}
+
+@mixin a-regular {
+    color: $light-blue;
+}
