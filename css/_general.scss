@@ -12,7 +12,7 @@ $light-blue: #41a9ff;
 @mixin header1 {
   font: {
     family: 'Roboto Condensed', sans-serif;
-    size: 2.5rem;
+    size: 2.5em;
     weight: 300;
   }
   text-transform: uppercase;
@@ -21,7 +21,7 @@ $light-blue: #41a9ff;
 @mixin header2 {
   font: {
     family: "Roboto Condensed", sans-serif;
-    size: 2rem;
+    size: 2em;
     weight: 300;
   }
   text-transform: uppercase;
@@ -30,7 +30,7 @@ $light-blue: #41a9ff;
 @mixin header3 {
   font: {
     family: "Roboto Condensed", sans-serif;
-    size: 1.5rem;
+    size: 1.5em;
     weight: 300;
   }
   text-transform: uppercase;
@@ -39,7 +39,7 @@ $light-blue: #41a9ff;
 @mixin prgph {
   font: {
     family: "Roboto Condensed", sans-serif;
-    size: 1rem;
+    size: 1em;
     weight: 300;
   }
   line-height: 2;
