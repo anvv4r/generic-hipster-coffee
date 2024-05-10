@@ -17,7 +17,6 @@ $light-blue: #41a9ff;
     size: 2.5rem;
     weight: 400;
   }
-
   text-transform: uppercase;
 }
 
@@ -27,7 +26,6 @@ $light-blue: #41a9ff;
     size: 2rem;
     weight: 400;
   }
-
   text-transform: uppercase;
 }
 
@@ -37,7 +35,6 @@ $light-blue: #41a9ff;
     size: 1.5rem;
     weight: 300;
   }
-
   text-transform: uppercase;
 }
 
@@ -56,7 +53,7 @@ $light-blue: #41a9ff;
 }
 
 @mixin content {
-  width: 70%;
+  width: 80%;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -77,7 +74,7 @@ $light-blue: #41a9ff;
 .header {
   display: flex;
   align-items: center;
-  // padding: 10px 200px;
+  padding: 10px 200px;
   justify-content: space-between;
   background-color: $light-gray;
   @include header;
@@ -157,7 +154,7 @@ main {
     h3 {
       @include header3;
       color: $dark-gray;
-      margin: 0rem 0 0.5rem 0;
+      margin: 0 0 0.5rem 0;
 
       @media screen and (max-width: 768px) {
         font-size: 0.8rem;
@@ -212,10 +209,6 @@ main {
       a {
         @include a-footer-active;
         @include prgph;
-
-        &:nth-child(1) {
-          @include a-footer-inactive;
-        }
       }
     }
   }
@@ -241,3 +234,4 @@ main {
     }
   }
 }
+
