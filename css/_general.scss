@@ -9,6 +9,7 @@ $middle-gray: #7f7f7f;
 $dark-gray: #33393f;
 $dark-blue: #0086ff;
 $light-blue: #41a9ff;
+$white: white;
 
 @mixin header1 {
   font: {
@@ -70,6 +71,7 @@ $light-blue: #41a9ff;
   padding: 10px 200px;
   justify-content: space-between;
   background-color: $light-gray;
+  // @include header;
 
   img {
     width: 125px;
@@ -84,11 +86,15 @@ $light-blue: #41a9ff;
       text-decoration: none;
       @include prgph;
       color: $middle-gray;
-
-      &:nth-child(1) {
-        color: $dark-gray;
-      }
     }
+
+    @media (max-width:800px) {
+      padding-top: 1em;
+    }
+  }
+
+  @media (max-width:800px) {
+    flex-direction: column;
   }
 }
 
@@ -109,10 +115,6 @@ $light-blue: #41a9ff;
       a {
         @include a-footer-active;
         @include prgph;
-
-        &:nth-child(1) {
-          @include a-footer-inactive;
-        }
       }
     }
 }
